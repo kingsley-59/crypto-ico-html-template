@@ -3,7 +3,7 @@ $(function() {
  "use strict";
     /* -------- preloader ------- */
     $(window).on("load", function() {
-        $('#preloader').delay(2000).fadeOut(500);
+        //$('#preloader').delay(2000).fadeOut(500);
     });
     /* -------- preloader End ------- */
 
@@ -392,3 +392,19 @@ if ($("#map").length > 0) {
 }
 
 /* -------- Google Map End --------*/
+
+/* Trading View code */
+new TradingView.widget({
+    "autosize": true,
+    "symbol": "NASDAQ:AAPL",
+    "interval": "D,",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "1",
+    "locale": "en",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": false,
+    "allow_symbol_change": true,
+    "details": true,
+    "container_id": "tradingview_e055f"
+});

@@ -7,7 +7,7 @@ a, a:focus { color: #fff; }
 a:hover {color: #da4bfd; }
 a.active {color: #da4bfd; }
 
-.btn {color: #fff;  background: #da4bfd; border: 1px solid #da4bfd; border-color: #da4bfd;}
+.btn {color: #fff;  background: #f06408; border: 1px solid #da4bfd; border-color: #da4bfd;}
 .btn:hover {color: #fff;}
 .btn:before{background: -webkit-radial-gradient(center, ellipse, rgba(39, 3, 106, 0.5) 0%, rgba(0, 0, 0, 0) 80%); background: radial-gradient(ellipse at center, rgba(39, 3, 106, 0.5) 0%, rgba(0, 0, 0, 0) 80%);}
 .owl-dot{background: #fff !important;}
@@ -15,6 +15,7 @@ a.active {color: #da4bfd; }
 
 #preloader{background: url(../images/loader.svg) center no-repeat #470fac;}
 
+.tagline{color: #f06408;}
 .form-control, .form-control:focus{background: #5d19db; color: #fff;}
 .form-control::-webkit-input-placeholder {color: #8d56f3;}
 .form-control::-moz-placeholder {color: #8d56f3;}
