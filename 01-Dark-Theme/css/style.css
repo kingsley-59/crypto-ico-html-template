@@ -146,11 +146,62 @@ header.fixed {padding: 15px 0px;}
 /*----- Sticky Header End -----*/
 /*----- Header End -----*/
 
+/* Modal styling */
+.modal-content{
+  border-radius: 15px;
+  padding: 10px;
+}
+.eth-container{
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.eth-btn{
+  width: 20%;
+  background-color: #ffffff;
+  color: #444;
+  font-size: small;
+  font-weight: 500;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+#eth-input, #wkd-input{
+  width: 30%;
+  border: none;
+  background-color: #eeeeee;
+  padding: 5px;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+}
+button.connect-wall{
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: #fba51b7c;
+  color: #fba61b;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 15px;
+  text-align: center;
+}
+
 /*_______________________________________________________
 // Home Page Style  //----------------------------
 _______________________________________________________*/
 /*----- Home Banner -----*/
-.home-banner {padding: 220px 0px 140px 0px; overflow: hidden; background: url(../images/banner-bg.svg) no-repeat center / cover; background-attachment: fixed;}
+.home-banner {padding: 220px 0px 140px 0px; overflow: hidden; background: url(../images/solana1.png) no-repeat center / cover; background-attachment: fixed;}
 .banner-heading {font-size: 50px; padding-bottom: 10px;}
 .banner-des {font-size: 16px; margin-bottom: 30px;}
 .banner-img {animation: MoveUpDown 2s linear infinite;}

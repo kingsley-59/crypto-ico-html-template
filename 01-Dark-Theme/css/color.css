@@ -2,12 +2,12 @@
 // BASIC STYLE  //----------------------------
 _______________________________________________________*/
 /*---------- General Style ------------*/
-body, html {color: #fff; background: #490fb4;}
+body, html {color: #fff; background: #0a0d25;}
 a, a:focus { color: #fff; }
 a:hover {color: #da4bfd; }
 a.active {color: #da4bfd; }
 
-.btn {color: #fff;  background: #f06408; border: 1px solid #da4bfd; border-color: #da4bfd;}
+.btn {color: #fff;  background: #fca311; border: none; border-color: #da4bfd;}
 .btn:hover {color: #fff;}
 .btn:before{background: -webkit-radial-gradient(center, ellipse, rgba(39, 3, 106, 0.5) 0%, rgba(0, 0, 0, 0) 80%); background: radial-gradient(ellipse at center, rgba(39, 3, 106, 0.5) 0%, rgba(0, 0, 0, 0) 80%);}
 .owl-dot{background: #fff !important;}
@@ -15,19 +15,21 @@ a.active {color: #da4bfd; }
 
 #preloader{background: url(../images/loader.svg) center no-repeat #470fac;}
 
-.tagline{color: #f06408;}
-.form-control, .form-control:focus{background: #5d19db; color: #fff;}
-.form-control::-webkit-input-placeholder {color: #8d56f3;}
-.form-control::-moz-placeholder {color: #8d56f3;}
-.form-control:-ms-input-placeholder {color: #8d56f3;}
-.form-control:-moz-placeholder {color: #8d56f3;}
+.orange{color: #fca311;}
+.form-control, .form-control:focus{background: #e2e2e2; color: #444;}
+.form-control::-webkit-input-placeholder {color: #444;}
+.form-control::-moz-placeholder {color: #444;}
+.form-control:-ms-input-placeholder {color: #444;}
+.form-control:-moz-placeholder {color: #444;}
 .heading-title-2 span, .sub-heading {color: #da4bfd;}
 .sub-page-banner{background-color: #410ca3;}
-.skyblue{background-color: #490fb4;}
-.darkblue{background-color: #470fac;}
+.skyblue{background-color: #0a0d25d7;}
+.darkblue{background-color: #0a0d25;}
 .top-scroll {background: #da4bfd; color: #fff;}
 .top-scroll:hover {opacity: 0.6;}
 .top-scroll a{color: #fff;}
+.light-grey{background-color: #eeeeee;}
+.white{background-color: #ffffff;}
 
 /*----- Menu -----*/
 .menu ul li a:before{background: #da4bfd;}
@@ -38,7 +40,7 @@ header.fixed .menu-toggle span, header.fixed .menu-toggle span:before, header.fi
 .menu-toggle.active span{background: transparent;}
 
 /*----- Home Banner -----*/
-.home-banner{background-color: #490fb4;}
+.home-banner{background-color: #0a0d25;}
 
 /*----- Work Section -----*/
 ul.check-list li span{background: #fff; color: #470fac;}
