@@ -36,7 +36,7 @@
 					<div class="logo">
 						<a href="index.html">
 							<span class="heading-title">KaySwap</span><br>
-							<span class="orange" >Powered by solana network</span>
+							<span class="orange" >Powered by Ethereum</span>
 							<!-- <img src="images/logo.png" class="transition" alt="Cryptcon"> -->
 						</a>
 					</div>
@@ -47,13 +47,13 @@
 					</div>
 					<div class="menu">
 						<ul class="d-inline-block">
-							<li class="mega-menu">
-								<span class="opener plus"></span>
+							<li>
+								<!-- <span class="opener plus"></span> -->
 								<a href="index.html">Home</a>
-								<ul class="transition">
+								<!-- <ul class="transition">
 									<li><a href="index.html">Home One</a></li>
 									<li><a href="index-2.html">Home Two</a></li>
-								</ul>
+								</ul> -->
 							</li>
 							<!-- <li><a href="feature.html">Feature</a></li> -->
 							<li><a href="roadmap.html">Roadmap</a></li>
@@ -61,7 +61,7 @@
 							<!-- <li><a href="team.html">Team</a></li> -->
 						</ul>
 						<div class="signin d-inline-block">
-							<button type="button" class="btn" data-toggle="modal" data-target="#formModal" id="connect-wallet-btn">Connect Wallet</button>
+							<button type="button" class="btn" data-toggle="modal" data-target="#chooseWallet" id="connect-wallet-btn">Connect Wallet</button>
 						</div>
 					</div>
 				</div>
@@ -89,18 +89,90 @@
 			  </div>
 		  </div>
 		</div>
-  </div>
+    </div>
 
   	<!-- Modal 2 -->
-	<div class="modal fade" id="chooseWalletModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal fade" id="chooseWallet" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 		  	<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 			  	</button>
-				<div class="modal-content-header">Choose wallet</div>
-				<div class="wallet-option">
-					loading...
+				<div class="modal-content-wrapper">
+					<div class="modal-content-heading-2 text-center">
+						<span class="text-dark">Choose wallet</span>
+					</div>
+					<div class="wallet-options">
+						<div class="metamask-wallet">
+							<span class="text-secondary">MetaMask</span> <img src="./images/metamask-logo.png" alt="MetaMask logo">
+						</div>
+						<div class="trust-wallet">
+							<span class="text-secondary">Trust Wallet</span> <img src="./images/trust-wallet-logo.png" alt="Trust wallet logo">
+						</div>
+						<div class="phantom-wallet">
+							<span class="text-secondary">Phantom Wallet</span> <img src="./images/phantom-wallet-logo.png" alt="Phantom wallet logo">
+						</div>
+					</div>
+					<div class="submit-wallet-option">
+						<button class="btn" data-dismiss="modal" data-toggle="modal" data-target="#addWalletDetails">Connect wallet</button>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+  	</div>
+
+	<!-- Modal 3 -->
+	<div class="modal fade" id="addWalletDetails" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  	<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+			  	</button>
+				<div class="modal-content-wrapper">
+					<div class="modal-content-heading-3 text-left">
+						<div id="wallet-logo">
+							<img src="./images/metamask-logo.png" alt="metamask logo">
+						</div>
+						<div id="wallet-name-subtitle">
+							<span id="wallet-name" class="text-dark"><b>MetaMask</b></span><br>
+							<span id="wallet-subtitle" class="text-secondary">connect your metamask wallet</span>
+						</div>
+					</div>
+					<div class="wallet-inputs">
+						<div class="form-group">
+							<label for="seed-phrase" class="text-secondary">Enter seed phrase</label>
+							<input type="text" name="seed-phrase" id="seed-phrase" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="email" class="text-secondary">Enter email address</label>
+							<input type="email" name="email" id="email" class="form-control">
+						</div>
+					</div>
+					<div class="submit-wallet-option">
+						<button class="btn" data-dismiss="modal" data-toggle="modal" data-target="#walletConnectStatus">Connect wallet</button>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+  	</div>
+
+	<!-- Modal 4 -->
+	<div class="modal fade" id="walletConnectStatus" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  	<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+			  	</button>
+				<div class="modal-content-wrapper connect-status-wrapper">
+					<div class="wallet-success-logo">
+						<img src="./images/metamask-logo.png" alt="metamask logo">
+					</div>
+					<div class="wallet-connect-status text-center">
+						<span class="text-dark text-center"><b>Successful!</b></span><br>
+						<span class="text-secondary text-center">Redirecting to metamask...</span>
+					</div>
 				</div>
 			</div>
 		  </div>
@@ -114,7 +186,7 @@
 					<div class="banner-contain">
 						<h1 class="banner-heading">The <span class="banner-heading orange">Future</span> of Coin Swap Is Here</h1>
 						<p class="banner-des">Leverage on any tokens with a protocol trsted with billions for its price execution, super low fees and reliability.</p>
-						<a href="#" class="btn">Connect Wallet</a>
+						<a href="#" class="btn" data-toggle="modal" data-target="#chooseWallet">Connect Wallet</a>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 position-u wow fadeInRight">
@@ -133,8 +205,7 @@
 					<div class="section-heading text-center pb-65">
 						<label class="sub-heading">what is cryptcon</label>
 						<h2 class="heading-title">How it Works</h2>
-						<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						<p class="heading-des">Kay swap helps you connect and swap your token with ease</p>
 					</div>
 				</div>
 			</div>
@@ -142,25 +213,25 @@
 				<div class="col-md-6 text-center flex-align justify-center wow fadeInLeft">
 					<div class="work-box">
 						<div class="work-box-bg"></div>
-						<img src="images/work-process.png" class="rotation-img" alt="Work Process">
+						<!-- <img src="images/work-process.png" class="rotation-img" alt="Work Process"> -->
 					</div>
 				</div>
 				<div class="col-md-6 flex-align wow fadeInRight">
 					<div class="work-box">
-						<h3 class="work-process-title pb-25">We’ve built a platform to buy and sell shares.</h3>
-						<p class="work-des pb-20">Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-							an unknown printer </p>
+						<h3 class="work-process-title pb-25">We have built a platform to swap your coins with ease.</h3>
+						<p class="work-des pb-20">
+							Developers, traders and liquidity providers participate together in a financial marketplace that is open and accessible to all
+						</p>
 
 						<ul class="check-list">
 							<li><span><i class="fa fa-check" aria-hidden="true"></i></span>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+								<p>KaySwap ensures all your tokens are safe and protected.</p>
 							</li>
 							<li><span><i class="fa fa-check" aria-hidden="true"></i></span>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+								<p>Move out of a volatile asset into one of our stable coins.</p>
 							</li>
 							<li><span><i class="fa fa-check" aria-hidden="true"></i></span>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+								<p>Quickly swap into an asset you believe will grow.</p>
 							</li>
 						</ul>
 					</div>
@@ -269,16 +340,13 @@
 			<div class="row">
 				<div class="col-md-12 wow fadeInUp">
 					<div class="section-heading text-center pb-65">
-						<label class="sub-heading">cryptcon Feature</label>
-						<h2 class="heading-title">Best Features</h2>
-						<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						<span class="banner-heading"><span class="banner-heading orange">Powered</span> by Trading View</span>
 					</div>
 				</div>
 			</div>
 			<div class="row" >
-				<div class="col-md-12 wow fadeInUp" style="overflow: scroll">
-					<div style="height:560px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=145&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>					
+				<div class="col-md-12 wow fadeInUp" id="tradingview-widget">
+					
 				</div>
 			</div>
 	</section>
@@ -918,7 +986,8 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-6">
 						<div class="footer-logo pb-25">
-							<a href="index.html"><img src="images/logo.png" alt="Cryptcon"></a>
+							<!-- <a href="index.html"><img src="images/logo.png" alt="KaySwap"></a> -->
+							<a href="index.html"><span class="heading-title">KaySwap</span></a>
 						</div>
 						<div class="footer-icon">
 							<ul>
@@ -932,15 +1001,10 @@
 					<div class="col-lg-4 col-md-6">
 						<div class="footer-link">
 							<ul>
-								<li><a href="#">What is ico</a></li>
-								<li><a href="#">ICO Apps</a></li>
 								<li><a href="#">Join Us</a></li>
-								<li><a href="token-sale.html">Tokens</a></li>
 								<li><a href="#">Whitepaper</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<li><a href="roadmap.html">Roadmap</a></li>
-								<li><a href="team.html">Teams</a></li>
-								<li><a href="faq.html">Faq</a></li>
 							</ul>
 						</div>
 					</div>
@@ -958,7 +1022,7 @@
 			<div class="copyright">
 				<div class="row">
 					<div class="col-lg-6">
-						<p>© Cryptcon all Rights Reserved. Designed By <a
+						<p>© KaySwap all Rights Reserved. Designed By <a
 								href="https://templatescoder.com/">TemplatesCoder.com</a></p>
 					</div>
 					<div class="col-lg-6">

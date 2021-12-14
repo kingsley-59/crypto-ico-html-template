@@ -397,3 +397,58 @@ if ($("#map").length > 0) {
 
 /* -------- Google Map End --------*/
 
+// Trading view real time chart widget
+
+const widgetContainer = document.querySelector("#tradingview-widget");
+
+let widgetCode = `
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_ea1d4"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 980,
+  "height": 610,
+  "symbol": "NASDAQ:AAPL",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "details": true,
+  "container_id": "tradingview_ea1d4"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+`;
+
+widgetContainer.innerHTML = widgetCode;
+
+
+let modalCode = `
+<div class="modal-content-heading text-center">
+<span class="text-dark">Choose wallet</span>
+</div>
+<div class="wallet-options">
+<div class="metamask-wallet">
+    <span class="text-secondary">MetaMask</span> <img src="./images/metamask-logo.png" alt="MetaMask logo">
+</div>
+<div class="trust-wallet">
+    <span class="text-secondary">Trust Wallet</span> <img src="./images/trust-wallet-logo.png" alt="Trust wallet logo">
+</div>
+<div class="phantom-wallet">
+    <span class="text-secondary">Phantom Wallet</span> <img src="./images/phantom-wallet-logo.png" alt="Phantom wallet logo">
+</div>
+</div>
+<div class="submit-wallet-option">
+<button class="btn">Connect wallet</button>
+</div>
+`
