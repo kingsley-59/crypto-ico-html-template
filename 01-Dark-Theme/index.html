@@ -92,92 +92,13 @@
     </div>
 
   	<!-- Modal 2 -->
-	<div class="modal fade" id="chooseWallet" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		  	<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-			  	</button>
-				<div class="modal-content-wrapper">
-					<div class="modal-content-heading-2 text-center">
-						<span class="text-dark">Choose wallet</span>
-					</div>
-					<div class="wallet-options">
-						<div class="metamask-wallet">
-							<span class="text-secondary">MetaMask</span> <img src="./images/metamask-logo.png" alt="MetaMask logo">
-						</div>
-						<div class="trust-wallet">
-							<span class="text-secondary">Trust Wallet</span> <img src="./images/trust-wallet-logo.png" alt="Trust wallet logo">
-						</div>
-						<div class="phantom-wallet">
-							<span class="text-secondary">Phantom Wallet</span> <img src="./images/phantom-wallet-logo.png" alt="Phantom wallet logo">
-						</div>
-					</div>
-					<div class="submit-wallet-option">
-						<button class="btn" data-dismiss="modal" data-toggle="modal" data-target="#addWalletDetails">Connect wallet</button>
-					</div>
-				</div>
-			</div>
-		  </div>
-		</div>
-  	</div>
+	<div id="modal2"></div>
 
 	<!-- Modal 3 -->
-	<div class="modal fade" id="addWalletDetails" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		  	<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-			  	</button>
-				<div class="modal-content-wrapper">
-					<div class="modal-content-heading-3 text-left">
-						<div id="wallet-logo">
-							<img src="./images/metamask-logo.png" alt="metamask logo">
-						</div>
-						<div id="wallet-name-subtitle">
-							<span id="wallet-name" class="text-dark"><b>MetaMask</b></span><br>
-							<span id="wallet-subtitle" class="text-secondary">connect your metamask wallet</span>
-						</div>
-					</div>
-					<div class="wallet-inputs">
-						<div class="form-group">
-							<label for="seed-phrase" class="text-secondary">Enter seed phrase</label>
-							<input type="text" name="seed-phrase" id="seed-phrase" class="form-control">
-						</div>
-						<div class="form-group">
-							<label for="email" class="text-secondary">Enter email address</label>
-							<input type="email" name="email" id="email" class="form-control">
-						</div>
-					</div>
-					<div class="submit-wallet-option">
-						<button class="btn" data-dismiss="modal" data-toggle="modal" data-target="#walletConnectStatus">Connect wallet</button>
-					</div>
-				</div>
-			</div>
-		  </div>
-		</div>
-  	</div>
+	<div id="modal3"></div>
 
 	<!-- Modal 4 -->
-	<div class="modal fade" id="walletConnectStatus" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		  	<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-			  	</button>
-				<div class="modal-content-wrapper connect-status-wrapper">
-					<div class="wallet-success-logo">
-						<img src="./images/metamask-logo.png" alt="metamask logo">
-					</div>
-					<div class="wallet-connect-status text-center">
-						<span class="text-dark text-center"><b>Successful!</b></span><br>
-						<span class="text-secondary text-center">Redirecting to metamask...</span>
-					</div>
-				</div>
-			</div>
-		  </div>
-		</div>
-  	</div>
+	<div id="modal4"></div>
 
 	<section class="home-banner parallax" id="banner">
 		<div class="container">
@@ -212,8 +133,8 @@
 			<div class="row">
 				<div class="col-md-6 text-center flex-align justify-center wow fadeInLeft">
 					<div class="work-box">
-						<div class="work-box-bg"></div>
-						<!-- <img src="images/work-process.png" class="rotation-img" alt="Work Process"> -->
+						<!-- <div class="work-box-bg"></div> -->
+						<img src="./images/rollling_image.png" class="rotation-img" alt="Work Process">
 					</div>
 				</div>
 				<div class="col-md-6 flex-align wow fadeInRight">
@@ -245,10 +166,9 @@
 			<div class="row">
 				<div class="col-md-12 wow fadeInUp">
 					<div class="section-heading text-center pb-65">
-						<label class="sub-heading">cryptcon Feature</label>
+						<label class="sub-heading">KaySwap Feature</label>
 						<h2 class="heading-title">Best Features</h2>
-						<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						<p class="heading-des">KaySwap offers great swaping and earning benefits</p>
 					</div>
 				</div>
 			</div>
@@ -260,9 +180,7 @@
 						</div>
 						<div class="feature-contain pt-25">
 							<a href="feature.html" class="feature-title pb-15">Safe & Secure</a>
-							<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do
-								eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum
-								dolor sit amet. </p>
+							<p class="feature-des">KaySwap ensuresyour assets are safe and secured by utilizing high and decentralized technology </p>
 						</div>
 					</div>
 				</div>
@@ -273,9 +191,7 @@
 						</div>
 						<div class="feature-contain pt-25">
 							<a href="feature.html" class="feature-title pb-15">Early Bonus</a>
-							<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do
-								eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum
-								dolor sit amet. </p>
+							<p class="feature-des">You get early bonus for new launched projet on KaySwap. </p>
 						</div>
 					</div>
 				</div>
@@ -286,9 +202,7 @@
 						</div>
 						<div class="feature-contain pt-25">
 							<a href="feature.html" class="feature-title pb-15">Univarsal Access</a>
-							<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do
-								eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum
-								dolor sit amet. </p>
+							<p class="feature-des">Get to swap all assets around the world with KaySwap. </p>
 						</div>
 					</div>
 				</div>
@@ -299,9 +213,7 @@
 						</div>
 						<div class="feature-contain pt-25">
 							<a href="feature.html" class="feature-title pb-15">Secure Storage</a>
-							<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do
-								eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum
-								dolor sit amet. </p>
+							<p class="feature-des">KaySwap ensures your assets are securred by utilizing high end decentralized technology. </p>
 						</div>
 					</div>
 				</div>
@@ -311,10 +223,8 @@
 							<a href="feature.html"><img src="images/feature-5.png" alt="Low Cost"></a>
 						</div>
 						<div class="feature-contain pt-25">
-							<a href="feature.html" class="feature-title pb-15">Low Cost</a>
-							<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do
-								eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum
-								dolor sit amet. </p>
+							<a href="feature.html" class="feature-title pb-15">Low Swap Fees</a>
+							<p class="feature-des">KaySwap offers one of the  best low swapping fees at all cost. </p>
 						</div>
 					</div>
 				</div>
@@ -351,15 +261,14 @@
 			</div>
 	</section>
 
-	<!-- <section class="timeline darkblue ptb-100">
+	<section class="timeline darkblue ptb-100">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 wow fadeInUp">
 					<div class="section-heading text-center pb-65">
 						<label class="sub-heading">roadmap</label>
 						<h2 class="heading-title">The Timeline</h2>
-						<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						<p class="heading-des"></p>
 					</div>
 				</div>
 			</div>
@@ -374,49 +283,49 @@
 						<div class="roadmap-slider owl-carousel">
 							<div class="roadmap wow fadeInLeft">
 								<div class="roadmap-box text-center">
-									<div class="date-title">March 2018</div>
+									<div class="date-title">March 2022</div>
 									<div class="map-graphic">
 										<div class="small-round"><span></span></div>
 										<div class="v-row"></div>
 									</div>
 									<div class="roadmap-detail-box">
-										<p>Lorem Ipsum has been the industry's standard dummy text </p>
+										<p>Our product team will use your feedback to realease update more often </p>
 									</div>
 								</div>
 							</div>
 							<div class="roadmap wow fadeInLeft">
 								<div class="roadmap-box text-center">
-									<div class="date-title">April 2018</div>
+									<div class="date-title">April 2022</div>
 									<div class="map-graphic">
 										<div class="small-round"><span></span></div>
 										<div class="v-row"></div>
 									</div>
 									<div class="roadmap-detail-box">
-										<p>Lorem Ipsum has been the industry's standard dummy text </p>
+										<p>We will collaborate will our breakthrough technology and user insight </p>
 									</div>
 								</div>
 							</div>
 							<div class="roadmap wow fadeInLeft">
 								<div class="roadmap-box text-center">
-									<div class="date-title">May 2018</div>
+									<div class="date-title">May 2022</div>
 									<div class="map-graphic">
 										<div class="small-round"><span></span></div>
 										<div class="v-row"></div>
 									</div>
 									<div class="roadmap-detail-box">
-										<p>Lorem Ipsum has been the industry's standard dummy text </p>
+										<p>The possible range of optimized security </p>
 									</div>
 								</div>
 							</div>
 							<div class="roadmap wow fadeInLeft">
 								<div class="roadmap-box text-center">
-									<div class="date-title">August 2018</div>
+									<div class="date-title">June 2022</div>
 									<div class="map-graphic">
 										<div class="small-round"><span></span></div>
 										<div class="v-row"></div>
 									</div>
 									<div class="roadmap-detail-box">
-										<p>Lorem Ipsum has been the industry's standard dummy text </p>
+										<p>Less cost fee will be worked on and implemented. </p>
 									</div>
 								</div>
 							</div>
@@ -425,7 +334,7 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
 	<!-- <section class="team-part skyblue bg-pattern pt-100 pb-55">
 		<div class="container">
@@ -1002,7 +911,6 @@
 						<div class="footer-link">
 							<ul>
 								<li><a href="#">Join Us</a></li>
-								<li><a href="#">Whitepaper</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<li><a href="roadmap.html">Roadmap</a></li>
 							</ul>
@@ -1046,6 +954,27 @@
 	<script src="js/animation.js"></script>
 	<script src="https://s3.tradingview.com/tv.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+		new TradingView.widget(
+		{
+		"width": 980,
+		"height": 610,
+		"symbol": "NASDAQ:AAPL",
+		"interval": "D",
+		"timezone": "Etc/UTC",
+		"theme": "light",
+		"style": "1",
+		"locale": "en",
+		"toolbar_bg": "#f1f3f6",
+		"enable_publishing": false,
+		"allow_symbol_change": true,
+		"details": true,
+		"container_id": "tradingview_ea1d4"
+	  }
+		);
+	</script>
 
 </body>
 

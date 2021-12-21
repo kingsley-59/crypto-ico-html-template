@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0; font-family: 'Poppins', sans-seri
 
 /*----- Form Style -----*/
 .form-group {margin-bottom: 20px;}
-.form-control { border-radius: 5px; border: 0; height: unset; padding: 13px 30px;}
+.form-control { border-radius: 5px; border: 0; height: unset; font-size: 15px; padding: 13px 30px;}
 textarea.form-control {min-height: 170px;}
 .form-control:focus{ outline: none; box-shadow: 0px 0px 10px 1px rgb(58, 7, 152, .95);}
 
@@ -217,6 +217,10 @@ button.connect-wall{
 .wallet-options div:hover{
   cursor: pointer;
   border: 1px solid #fba61b;
+}
+.selected-wallet{
+  border: 2px inset #fba61b;
+  background-color: #f06408;
 }
 .submit-wallet-option button{
   width: 100%;

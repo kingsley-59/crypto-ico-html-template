@@ -10,6 +10,7 @@
     <link type="image/x-icon" href="images/fav-icon.png" rel="icon">
 
     <!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/color.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -31,7 +32,11 @@
 				<div class="row flex-align">
 					<div class="col-lg-4 col-md-3 col-8">
 						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" class="transition" alt="Cryptcon"></a>
+							<a href="index.html">
+								<span class="heading-title">KaySwap</span><br>
+								<span class="orange" >Powered by Ethereum</span>
+								<!-- <img src="images/logo.png" class="transition" alt="Cryptcon"> -->
+							</a>
 						</div>
 					</div>
 					<div class="col-lg-8 col-md-9 col-4 text-right">
@@ -40,38 +45,36 @@
 						</div>
 						<div class="menu">
 							<ul class="d-inline-block">
-								<li class="mega-menu">
-									<span class="opener plus"></span>
+								<li>
+									<!-- <span class="opener plus"></span> -->
 									<a href="index.html">Home</a>
-									<ul class="transition">
+									<!-- <ul class="transition">
 										<li><a href="index.html">Home One</a></li>
 										<li><a href="index-2.html">Home Two</a></li>
-									</ul>
+									</ul> -->
 								</li>
-								<li class="mega-menu">
-									<span class="opener plus"></span>
-									<a href="about.html">Pages</a>
-									<ul class="transition">
-										<li><a href="about.html">About</a></li>
-										<li><a href="blog-list.html">Blog</a></li>
-										<li><a href="token-sale.html">Token Sale</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="404.html">404 Page</a></li>
-									</ul>
-								</li>
-								<li><a href="feature.html">Feature</a></li>
+								<!-- <li><a href="feature.html">Feature</a></li> -->
 								<li><a href="roadmap.html">Roadmap</a></li>
-								<li><a href="team.html">Team</a></li>
+								<li><a href="about.html">About</a></li>
+								<!-- <li><a href="team.html">Team</a></li> -->
 							</ul>
 							<div class="signin d-inline-block">
-								<a href="#" class="btn">Sign in</a>
+								<button type="button" class="btn" data-toggle="modal" data-target="#chooseWallet" id="connect-wallet-btn">Connect Wallet</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
+
+		<!-- Modal 2 -->
+		<div id="modal2"></div>
+
+		<!-- Modal 3 -->
+		<div id="modal3"></div>
+
+		<!-- Modal 4 -->
+		<div id="modal4"></div>
 
 		<section class="sub-page-banner parallax" id="banner">
 			<div class="container">
@@ -100,8 +103,8 @@
 									<div class="roadmap-main-content">
 										<div class="roadmap-small-round"></div>
 										<div class="roadmap-animated wow fadeInLeft">
-											<h2 class="roadmap-date">March 2018</h2>
-											<p class="roadmap-box-detail">Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum has been the industry's standard dummy text </p>
+											<h2 class="roadmap-date">March 2022</h2>
+											<p class="roadmap-box-detail">Our product team will use your feedback to realease update more often </p>
 										</div>
 									</div>
 									<div class="clear"></div>
@@ -110,8 +113,8 @@
 									<div class="roadmap-main-content">
 										<div class="roadmap-small-round"></div>
 										<div class="roadmap-animated wow fadeInRight">
-											<h2 class="roadmap-date">April 2018</h2>
-											<p class="roadmap-box-detail">Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum has been the industry's standard dummy text </p>
+											<h2 class="roadmap-date">April 2022</h2>
+											<p class="roadmap-box-detail">We will collaborate will our breakthrough technology and user insight </p>
 										</div>
 									</div>
 									<div class="clear"></div>
@@ -120,8 +123,8 @@
 									<div class="roadmap-main-content">
 										<div class="roadmap-small-round"></div>
 										<div class="roadmap-animated wow fadeInLeft">
-											<h2 class="roadmap-date">May 2018</h2>
-											<p class="roadmap-box-detail">Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum has been the industry's standard dummy text </p>
+											<h2 class="roadmap-date">May 2022</h2>
+											<p class="roadmap-box-detail">The possible range of optimized security </p>
 										</div>
 									</div>
 									<div class="clear"></div>
@@ -130,8 +133,8 @@
 									<div class="roadmap-main-content">
 										<div class="roadmap-small-round"></div>
 										<div class="roadmap-animated wow fadeInRight">
-											<h2 class="roadmap-date">June 2018</h2>
-											<p class="roadmap-box-detail">Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum has been the industry's standard dummy text </p>
+											<h2 class="roadmap-date">June 2022</h2>
+											<p class="roadmap-box-detail">Less cost fee will be worked on and implemented. </p>
 										</div>
 									</div>
 									<div class="clear"></div>
@@ -211,7 +214,8 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-6">
 							<div class="footer-logo pb-25">
-								<a href="index.html"><img src="images/logo.png" alt="Cryptcon"></a>
+								<!-- <a href="index.html"><img src="images/logo.png" alt="KaySwap"></a> -->
+								<a href="index.html"><span class="heading-title">KaySwap</span></a>
 							</div>
 							<div class="footer-icon">
 								<ul>
@@ -225,24 +229,18 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="footer-link">
 								<ul>
-									<li><a href="#">What is ico</a></li>
-									<li><a href="#">ICO Apps</a></li>
 									<li><a href="#">Join Us</a></li>
-									<li><a href="token-sale.html">Tokens</a></li>
-									<li><a href="#">Whitepaper</a></li>
 									<li><a href="contact.html">Contact</a></li>
 									<li><a href="roadmap.html">Roadmap</a></li>
-									<li><a href="team.html">Teams</a></li>
-									<li><a href="faq.html">Faq</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="subscribe">
 								<div class="form-group">
-								    <label>Subscribe to our Newsleter</label>
-								    <input type="email" class="form-control" placeholder="Enter your email Address">
-								    <input type="submit" name="submit" value="Subscribe" class="submit">
+									<label>Subscribe to our Newsleter</label>
+									<input type="email" class="form-control" placeholder="Enter your email Address">
+									<input type="submit" name="submit" value="Subscribe" class="submit">
 								</div>
 							</div>
 						</div>
@@ -251,7 +249,8 @@
 				<div class="copyright">
 					<div class="row">
 						<div class="col-lg-6">
-							<p>© Cryptcon all Rights Reserved. Designed By <a href="https://templatescoder.com/">TemplatesCoder.com</a></p>
+							<p>© KaySwap all Rights Reserved. Designed By <a
+									href="https://templatescoder.com/">TemplatesCoder.com</a></p>
 						</div>
 						<div class="col-lg-6">
 							<ul>
@@ -266,9 +265,11 @@
 		</footer>
 	
 		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script src="js/animation.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="js/app.js"></script>
 		
 	</body>
 
