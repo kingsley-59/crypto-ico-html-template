@@ -248,7 +248,7 @@
 				</div>
 				<div class="copyright">
 					<div class="row">
-						<div class="col-lg-6">
+						<div style="display: none;" class="col-lg-6">
 							<p>© KaySwap all Rights Reserved. Designed By <a
 									href="https://templatescoder.com/">TemplatesCoder.com</a></p>
 						</div>
@@ -269,12 +269,15 @@
 		<script src="js/animation.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/custom.js"></script>
+		<script type="module" src="js/app.js"></script>
 		<script type="module">
 			import { Wallet } from './js/firestoreDB.js';
+			import { selectWallet } from './js/app.js';
+
+			window.selectWallet = selectWallet;
 
 			const wallet = new Wallet();
-		</script>
-		<script src="js/app.js"></script>
+		</script>	
 		
 	</body>
 
