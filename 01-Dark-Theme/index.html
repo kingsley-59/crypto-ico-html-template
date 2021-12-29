@@ -254,7 +254,17 @@
 			</div>
 			<div class="row" >
 				<div class="col-md-12 wow fadeInUp" id="tradingview-widget">
-					
+					<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+						{
+						"width": "100%",
+						"height": "100%",
+						"defaultColumn": "overview",
+						"screener_type": "crypto_mkt",
+						"displayCurrency": "USD",
+						"colorTheme": "light",
+						"locale": "en"
+					  }
+						</script>
 				</div>
 			</div>
 	</section>
@@ -962,17 +972,6 @@
 		const wallet = new Wallet();
 	</script>	
 
-	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-		new TradingView.widget({
-		"width": 980,
-		"height": "100%",
-		"defaultColumn": "overview",
-		"screener_type": "crypto_mkt",
-		"displayCurrency": "USD",
-		"colorTheme": "light",
-		"locale": "en"
-	  })
-		</script>
 
 </body>
 

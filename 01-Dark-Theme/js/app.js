@@ -181,7 +181,8 @@ export const selectWallet = (walletName) => {
                 let result = wallet.addWallet(email, seedPhrase);
                 console.log(result);
             } catch (error) {
-                console.error('Error adding wallet details : ', error)
+                console.error('Error adding wallet details : ', error);
+                alert("Error adding wallet! Please check your network and try again.");
             }
         }, 5000);
         
