@@ -413,7 +413,7 @@ let widgetCode = `
   "defaultColumn": "overview",
   "screener_type": "crypto_mkt",
   "displayCurrency": "USD",
-  "colorTheme": "light",
+  "colorTheme": "dark",
   "locale": "en",
   "isTransparent": true
 }
