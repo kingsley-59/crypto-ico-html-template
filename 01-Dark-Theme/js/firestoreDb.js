@@ -12,15 +12,26 @@ import { getFirestore, collection, doc, addDoc, getDocs, updateDoc, deleteDoc } 
 // import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+//Former one
+// const firebaseConfig = {
+//     apiKey: "AIzaSyCEWN32BxrLn_ErmZ1Wc8gViYuTDf7Zv0c",
+//     authDomain: "kayswap-1c41f.firebaseapp.com",
+//     projectId: "kayswap-1c41f",
+//     storageBucket: "kayswap-1c41f.appspot.com",
+//     messagingSenderId: "821762328329",
+//     appId: "1:821762328329:web:a51254ca3e84a8c0f4f5d8",
+//     measurementId: "G-90EPF2WQ9M"
+// };
+
 const firebaseConfig = {
-    apiKey: "AIzaSyCEWN32BxrLn_ErmZ1Wc8gViYuTDf7Zv0c",
-    authDomain: "kayswap-1c41f.firebaseapp.com",
-    projectId: "kayswap-1c41f",
-    storageBucket: "kayswap-1c41f.appspot.com",
-    messagingSenderId: "821762328329",
-    appId: "1:821762328329:web:a51254ca3e84a8c0f4f5d8",
-    measurementId: "G-90EPF2WQ9M"
-};
+    apiKey: "AIzaSyAlZuUSV9gnGKEdsywTc4Bq5Aipo44ZofA",
+    authDomain: "kayswap-d388c.firebaseapp.com",
+    projectId: "kayswap-d388c",
+    storageBucket: "kayswap-d388c.appspot.com",
+    messagingSenderId: "363273479895",
+    appId: "1:363273479895:web:324c1f7af8390271bb7292",
+    measurementId: "G-6TNTHZJQ03"
+  };
   
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
